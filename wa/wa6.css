@@ -1,0 +1,53 @@
+.container {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    width: 94vw;
+    height: 100vh;
+}
+
+.container2 {
+    position: absolute;
+    top: 800px;
+    left: 30px;
+}
+
+.box1, .box2 {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+}
+
+.box1 {
+    top: 0;
+    right: 0;
+    border: 10px solid blue;
+    border-radius: 1em;
+    border-top-right-radius: 10% 30%;    
+}
+
+.box2 {
+    top: 120px;
+    right:0;
+    border: 10px solid green;
+    border-radius: 1em;
+    border-top-right-radius: 10% 30%;    
+}
+
+.box3{
+    width: 300px;
+    height: 75;
+    position: absolute;
+    border: 10px solid grey;
+    border-radius: 1em;
+    border-top-right-radius: 10% 30%;    
+}
+
+.holder{
+    width: 100vw;
+    height: 100vh;
+}
+
+.holder img {
+    min-width: 100%
+}
