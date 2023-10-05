@@ -8,7 +8,7 @@ html {
 
 body {
   margin: 0;
-  background: #ccc;
+  background: #9a9898;
 }
 
 article {
@@ -16,12 +16,18 @@ article {
   height: 297mm;
   margin: 20px auto;
   position: relative;
+  background-image: url('top-image.png');
+  background-repeat: no-repeat;
+  background-color: white;
+  border-top: 1mm solid red;
+  border-bottom: 1mm solid red;
 }
 
 address {
   position: absolute;
   bottom: 8mm;
   right: 20mm;
+  background-image: url('top-image.png');
 }
 
 h1 {
@@ -36,6 +42,7 @@ h1 {
   padding: 44px 0;
   color: white;
   text-shadow: 1px 1px 1px black;
+  background-image: url('logo.png');
 }
 
 /* Your CSS below here */
