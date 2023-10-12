@@ -17,20 +17,20 @@
     }
 }
 
-@media only screen and (max-width: 800px) {
-    #WideScreen{
+@media only screen and (min-width: 800px) {
+    #wideScreen{
         background-color: lightblue;
     }
 }
 
-@media screen and (min-width: 800px) {
-   #shotScreen{
+@media screen and (min-height: 500px) {
+   #shortScreen{
         background-color: yellow;
     }
 }
 
 @media screen and (min-height: 800px) {
-    #tallscreen{
+    #tallScreen{
         background-color: orange;
     }
 }
