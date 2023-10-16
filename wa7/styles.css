@@ -63,7 +63,7 @@ body {
   }
   
   aside h2{
-    padding-left: 10px;
+    padding-left: 40px;
   }
 
   @media only screen and (max-width: 500px) {
@@ -80,5 +80,3 @@ body {
       flex-direction: column;
     }
   }
-
- 
