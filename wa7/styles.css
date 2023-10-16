@@ -59,16 +59,26 @@ body {
 
   .feature {
       width: 200px;
+      padding-right: 10px;
+  }
+  
+  aside h2{
+    padding-left: 10px;
   }
 
   @media only screen and (max-width: 500px) {
     .grid{
-      display 
+      display: flex;
+      flex-direction: column;
+    }
+    nav ul{
+      display: flex;
+      flex-direction: column;
+    }
+    .photos{
+      display: flex;
+      flex-direction: column;
     }
   }
 
-  @media only screen and (min-width: 499px) {
-    .grid{
-      display 
-    }
-  }
+ 
