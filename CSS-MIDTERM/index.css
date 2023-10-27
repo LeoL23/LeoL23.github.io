@@ -2,16 +2,41 @@
     box-sizing: border-box;
   }
   
-  html {
+html {
     font-family: sans-serif;
   }
   
-  body{
-    background-color: gold;
-    color: black;
+body{
+  background-color: gold;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  grid-template-columns: repeat(10, 1fr);
+  grid-auto-rows: 100px;
+  gap: 10px;
+    
 }
-  
-  img{
+
+h2{
+  font-size: 16px;
+}
+
+img{
     width:40vw;
     height: 40vh;
+}
+
+section{
+  color: red;
+  font-size: 24px;
+}
+
+
+
+.formate{
+  color: grey;
+}
+
+.concert{
+  color: black;
 }
