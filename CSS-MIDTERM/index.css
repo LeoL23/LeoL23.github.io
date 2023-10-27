@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: sans-serif;
+  }
+  
+  body{
+    background-color: gold;
+    color: black;
+}
+  
+  img{
+    width:40vw;
+    height: 40vh;
+}
