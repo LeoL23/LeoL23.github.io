@@ -17,8 +17,11 @@ body{
     
 }
 
+
 h2{
   font-size: 16px;
+  filter: drop-shadow(2px 2px 2px white)
+
 }
 
 img{
@@ -33,10 +36,23 @@ section{
 
 
 
-.formate{
+.format{
   color: grey;
+  display: grid;
+
 }
 
 .concert{
   color: black;
+
+}
+
+@media screen and (min-width: 400px){
+  .concert{
+    text-align: center;
+    max-width: 400px;
+  }
+  .format
+    text-align: center;
+    max-width: 400px;
 }
