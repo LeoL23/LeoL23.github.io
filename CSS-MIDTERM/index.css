@@ -13,20 +13,12 @@ body{
   display: flex;
   grid-template-columns: repeat(10, 1fr);
   grid-auto-rows: 100px;
-  gap: 10px;
-    
+  gap: 25px;
 }
-
 
 h2{
   font-size: 16px;
-  filter: drop-shadow(2px 2px 2px white)
-
-}
-
-img{
-    width:40vw;
-    height: 40vh;
+  filter: drop-shadow(1px 1px 1px white)
 }
 
 section{
@@ -34,25 +26,30 @@ section{
   font-size: 24px;
 }
 
-
+article{
+  color: black;
+  padding: 5px;
+}
 
 .format{
-  color: grey;
+  color: black;
   display: grid;
+  background-color: orange;
 
 }
 
 .concert{
   color: black;
+  background-color: orange;
+}
 
+.concert:hover{
+  background-color: white;
 }
 
 @media screen and (min-width: 400px){
   .concert{
     text-align: center;
-    max-width: 400px;
+    max-width: 1500px;
   }
-  .format
-    text-align: center;
-    max-width: 400px;
 }
