@@ -7,11 +7,11 @@ function randomValueFromArray(array){
     return array[random];
 }
 
-const storyText = "It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.";
+const storyText = "It was 45 fahrenheit outside today in Langley Falls, VA, so :insertx: went for a walk to the park down the block. When he got to :inserty:, he raised his head to the air and howled in drunken anger, then :insertz:. Steve Smith and Roger saw the whole thing right in front of their eyes as Roger was dressed up as his Ricky Spanish persona and filming a Tik-Tok. He didn't get up and Roger started recording and making jokes, this was no suprise to Steve Smith. The guy. — :insertx: , weighed 240 pounds, and it was a cold day here in Lnagley.";
 
-const insertX = ["Willy the Goblin", "Big Daddy", "Father Christmas"];
-const insertY = ["the soup kitchen", "Disneyland", "the White House"];
-const insertZ = ["spontaneously combusted", "melted into a puddle on the sidewalk", "turned into a slug and crawled away"];
+const insertX = ["A Pitbull named Galaxy Destroyer", "Michael Myers", "Jason"];
+const insertY = ["the lake", "bodega", "dog park"];
+const insertZ = ["jumped in head first", "ran into a wall at full sprint", "walked in circles until he passed out"];
 
 randomize.addEventListener('click', result);
 
@@ -29,13 +29,13 @@ function result() {
 
     if(customName.value !== '') {
         const name = customName.value;
-        newStory = newStory.replace("Bob", name);
+        newStory = newStory.replace("Steve Smith", name);
     }
   
     if(document.getElementById("uk").checked) {
-      const weight = Math.round(300/14) + " stone";
-      newStory = newStory.replace("300 pounds", weight);
-      const temperature =  Math.round((94-32)*(5/9)) + " centigrade";
+      const weight = Math.round(240/14) + " stone";
+      newStory = newStory.replace("240 pounds", weight);
+      const temperature =  Math.round((45-32)*(5/9)) + " centigrade";
       newStory = newStory.replace("94 fahrenheit", temperature);
   
     }
