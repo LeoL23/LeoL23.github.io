@@ -7,7 +7,7 @@ function randomValueFromArray(array){
     return array[random];
 }
 
-const storyText = "It was 45 fahrenheit outside today in Langley Falls, VA, so :insertx: went for a walk to the park down the block. When he got to :inserty:, he raised his head to the air and howled in drunken anger, then :insertz:. Steve Smith and Roger saw the whole thing right in front of their eyes as Roger was dressed up as his Ricky Spanish persona and filming a Tik-Tok. He didn't get up and Roger started recording and making jokes, this was no suprise to Steve Smith. The guy. — :insertx: , weighed 240 pounds, and it was a cold day here in Lnagley.";
+const storyText = "It was 45 fahrenheit outside today in Langley Falls, VA, so :insertx: went for a walk to the park down the block. When he got to :inserty:, he raised his head to the air and howled in drunken anger, then :insertz:. Steve Smith and Roger saw the whole thing right in front of their eyes as Roger was dressed up as his Ricky Spanish persona and filming a Tik-Tok. He didn't get up and Roger started recording and making jokes, this was no suprise to Steve Smith. The guy. — :insertx: , weighed 240 pounds, and it was a cold day here in Langley.";
 
 const insertX = ["A Pitbull named Galaxy Destroyer", "Michael Myers", "Jason"];
 const insertY = ["the lake", "bodega", "dog park"];
