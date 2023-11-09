@@ -33,12 +33,12 @@ function random2(number) {
 
 function draw() {
     ctx.clearRect(0,0,canvas.width, canvas.height);
-    for (let i = 0; i<666; i++) {
+    for (let i = 0; i<999; i++) {
         ctx.beginPath();
-        let red = random(255);
+        let red = random(100);
         let green = random(255);
         let blue = random(255);
-        let alpha = random2(1);
+        let alpha = random2(10);
         let color = "rgba("+red+","+green+","+blue+","+alpha+")";
         console.log(color);
         ctx.fillStyle = color;
@@ -46,7 +46,7 @@ function draw() {
             random(canvas.width),
             random(canvas.height),
             random(50),
-            0,
+            4,
             2 * Math.PI,
         );
         ctx.fill();
