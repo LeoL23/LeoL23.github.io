@@ -5,9 +5,9 @@ const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
-const picarrary = ['images/pic1.jpg', 'images/pic2.jpg', 'images/pic3.jpg', 'images/pic4.jpg', 'images/pic5.jpg'];
+const picarrary = ['images/131108082143-thor-the-dark-world.jpg', 'images/pic2.jpg', 'images/captain-america-android-0aqaztdwgpz41epy.jpg', 'images/h_blackpanther_mobile_19754_57fe2288.jpeg', 'images/iron man.jpeg'];
 /* Declaring the alternative text for each image file */
-const altText = ['Eye', 'Rock', 'Flowers', 'Egypt', 'Butterfly'];
+const altText = ['Thor', 'Rock', 'Flowers', 'Black Panther', 'Iron Man'];
 /* Looping through images */
 for (let i = 0; i < 5;i++) {
     const newImage = document.createElement('img');

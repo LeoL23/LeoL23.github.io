@@ -11,7 +11,7 @@ body {
 .full-img {
   position: relative;
   display: row;
-  width: 960px;
+  width: 840px;
   height: 480px;
 }
 
@@ -38,6 +38,6 @@ button {
 .thumb-bar img {
   display: block;
   width: 20%;
-  float: right;
+  float: left;
   cursor: pointer;
 }
