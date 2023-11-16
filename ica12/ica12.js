@@ -1,43 +1,45 @@
 const newBtn = document.querySelector('#js-new-quote').addEventListener('click', getQuote);
+const answerBtn = document.querySelector('#js-tweet').addEventListener('click', displayAnswer);
+
 const questionTxt = document.querySelector('#js-quote-text');
-const answerBtn = document.querySelector('js-tweet').addEventListener('click', testFunction);
-let answe = "";
-const endpoint = 'https://trivia.cyberwisp.com/getrandomchristmasquestion'
+let answerTxt = document.querySelector('#js-answer-text');
 
-async function getQuote(){
-    //console.log('Test');
+let answer = '';
 
+// this is the endpoint for the API that we want to get a reponse from
+const endpoint = 'https://trivia.cyberwisp.com/getrandomchristmasquestion';
+
+async function getQuote() {
+   // try -> tries something; if it returns an error, it puts us into the catch block
     try {
         const response = await fetch(endpoint);
+        // if !response.ok is "if the response ISN'T okay (status code 200)"
         if (!response.ok) {
             throw Error(response.statusText);
         }
         const json = await response.json();
-        //console.log(json);
-        displayQuote(json['question'])
-        answer = json['answer']
+        
+        // JSON is a dictionary, which is like a list; we call specific pieces of information out based on the 'key' associated with that value
+        displayQuote(json['question']);
+        answer = json['answer'];
+        answerTxt.textContent = '';
     }
-    catch(err){
+    catch(err) {
         console.log(err);
         alert('Failed to fetch new quote');
     }
 }
 
+// this function shows the question
 function displayQuote(question) {
-    const questionTxt = document.querySelector('#js-quote-text');
     questionTxt.textContent = question;
 }
 
-function displayAnswer(answer) {
-    const answerTxt = document.querySelector('#js-answer-text');
-    answerTxt.textContent = '';
-    
+// this function shows the answer
+function displayAnswer() {
+    answerTxt.textContent = answer;
 }
 
-
-function testFunction() {
-    console.log("Answer button clicked");
-}
-
+// we run getQuote once when the script first loads to populate a question
+// when the page is loading
 getQuote();
-
