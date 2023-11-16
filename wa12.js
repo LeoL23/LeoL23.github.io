@@ -7,7 +7,7 @@ let answerTxt = document.querySelector('#js-answer-text');
 let answer = '';
 
 // this is the endpoint for the API that we want to get a reponse from
-const endpoint = 'https://trivia.cyberwisp.com/getrandomchristmasquestion';
+const endpoint = 'https://official-joke-api.appspot.com/random_joke';
 
 async function getQuote() {
    // try -> tries something; if it returns an error, it puts us into the catch block
@@ -18,10 +18,10 @@ async function getQuote() {
             throw Error(response.statusText);
         }
         const json = await response.json();
-        
+        console.log(json);
         // JSON is a dictionary, which is like a list; we call specific pieces of information out based on the 'key' associated with that value
-        displayQuote(json['question']);
-        answer = json['answer'];
+        displayQuote(json['setup']);
+        answer = json['punchline'];
         answerTxt.textContent = '';
     }
     catch(err) {
