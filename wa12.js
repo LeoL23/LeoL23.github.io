@@ -18,7 +18,7 @@ async function getQuote() {
             throw Error(response.statusText);
         }
         const json = await response.json();
-        console.log(json);
+        console.log(json); //added this 
         // JSON is a dictionary, which is like a list; we call specific pieces of information out based on the 'key' associated with that value
         displayQuote(json['setup']);
         answer = json['punchline'];
