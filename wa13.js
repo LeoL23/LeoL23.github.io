@@ -36,34 +36,50 @@ let company = {
     ]
 }
 
+//Question 1
+console.log(HR["employees"]);
 
+//Qestion 2
+console.log(company["companyInfo"])
 
+//Question 3
+HR["employees"].push(
+    {
+        "name": "Anna",
+        "department": "Tech",
+        "designation": "Executive",
+        "salary": 25600,
+        "raise-eligible": true
+    });
+console.log(company["companyInfo"][0]["employees"][HR["employees"].length -1]);
 
-
-
-
-
-class Company {
-    "companyName": "Tech Stars", //Q2
-    "website": "Website", //Q2
-    "employees": [ 
-        {
-            "firstName": "Sam",
-            "department": "Tech",
-            "Salary": "Manager",
-            "raiseEligible": "40000",
-        },
-        {
-            "firstName": "Mary",
-            "department": "Finance",
-            "Salary": "Trainee",
-            "raiseEligible": "18500",    
-        },
-        {
-            "firstName": "Bill",
-            "department": "HR",
-            "Salary": "Executive",
-            "raiseEligible": "21200",    
-        }
-    ]
+//Question 4
+let totalSalary = 0;
+for (let i=0; i < HR["employees"].length; i++){
+    totalSalary += HR["employees"][i]["salary"];
 }
+
+console.log(totalSalary)
+
+//Question 5
+function doYouDeserveARaise() {
+    for (let i=0; i <HR["employees"].length; i++){
+    if (HR["employees"][i]["raise-eligible"] == true){
+        HR["employees"][i]["salary"] = HR["employees"][i]["salary"] * 1.1;
+        HR["employees"][i]["raise-eligible"] = false;
+    }
+    console.log(HR["employees"]);
+}}
+doYouDeserveARaise();
+
+//Question 6
+const wfh = ["Anna", "Sam"];
+for (let i=0; i < HR["employees"].length; i++){
+    if(wfh.includes(HR["employees"][i]["name"])){
+        HR["employees"][i]["wfh"] = true;
+    } else{
+        HR["employees"][i]["wfh"] = false;
+    }
+}
+
+console.log(HR["employees"])
