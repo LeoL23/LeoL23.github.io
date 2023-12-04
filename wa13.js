@@ -1,4 +1,4 @@
-console.log("Making sure this  works");
+console.log("Making sure this works");
 
 let HR = {
 
@@ -20,7 +20,7 @@ let HR = {
     "name": "Bill",
     "department": "HR",
     "designation": "Executive",
-    "salary": 212000,
+    "salary": 21200,
     "raise-eligible": false,
     }
 ]
@@ -49,7 +49,7 @@ HR["employees"].push(
         "department": "Tech",
         "designation": "Executive",
         "salary": 25600,
-        "raise-eligible": true
+        "raise-eligible": false
     });
 console.log(company["companyInfo"][0]["employees"][HR["employees"].length -1]);
 
@@ -58,7 +58,6 @@ let totalSalary = 0;
 for (let i=0; i < HR["employees"].length; i++){
     totalSalary += HR["employees"][i]["salary"];
 }
-
 console.log(totalSalary)
 
 //Question 5
