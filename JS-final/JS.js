@@ -16,34 +16,48 @@ function startCounting(index) {
       currentValue = 0;
     }
 
-    currentInput.value = (currentValue + 1) % 10;
-  }, 170); // Changes the speed of numbers changing
+    // Introduce randomness to decide whether to count up or loop back to 0-9
+    const randomAction = Math.random();
+
+    if (randomAction < 0.8) {
+      // Count up
+      currentInput.value = (currentValue + 1) % 10;
+    } else {
+      // Loop back to 0
+      currentInput.value = 0;
+    }
+  }, getRandomInterval()); // Get a random interval between 100 and 500 milliseconds
 }
 
 function stopCounting() {
   clearInterval(countingInterval);
 }
 
+function getRandomInterval() {
+  // Get a random interval between 80 and 300 milliseconds
+  return Math.floor(Math.random() * (300 - 80 + 1) + 100);
+}
+
 function setNumber() {
   const inputContainers = document.querySelectorAll('.input-box');
   const currentInput = inputContainers[currentIndex];
 
-  // If the input is empty or not a number, generate a random number between 0-9
+  // If the input is empty, will generate a random number between 0-9
   if (currentInput.value === '' || isNaN(parseInt(currentInput.value))) {
     currentInput.value = Math.floor(Math.random() * 10);
   }
 
-  // Move to the next input box
+  // Move to the box to the right
   currentIndex = (currentIndex + 1) % inputContainers.length;
 
-  // Stop counting for the previous box
+  // Stop counting the previous box
   const previousIndex = (currentIndex - 1 + inputContainers.length) % inputContainers.length;
   stopCounting();
 
   // Start counting for the current box
   startCounting(currentIndex);
 }
-
+// restart button
 function restart() {
   const inputContainers = document.querySelectorAll('.input-box');
 
@@ -58,11 +72,11 @@ function restart() {
   // Stop counting
   stopCounting();
 
-  // Start counting for the first box
+  // Start counting in current box
   startCounting(currentIndex);
 }
 
-// Dynamically create input boxes based on the length of the phone number
+// Create input boxes based on the length of the phone number
 const inputContainer = document.getElementById('input-container');
 for (let i = 0; i < 10; i++) {
   const inputBox = document.createElement('input');
