@@ -1,7 +1,5 @@
 console.log("Making sure this works");
 
-
-
 let currentIndex = 0; // Current index of the input boxes
 let countingInterval;
 
@@ -19,7 +17,7 @@ function startCounting(index) {
     }
 
     currentInput.value = (currentValue + 1) % 10;
-  }, 170); // speed of numbers changing
+  }, 170); // Changes the speed of numbers changing
 }
 
 function stopCounting() {
