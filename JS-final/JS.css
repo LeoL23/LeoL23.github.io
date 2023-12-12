@@ -1,0 +1,39 @@
+html, body {
+    margin: 0;
+}
+  
+html {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 100%;
+}
+  
+body {
+    overflow: hidden;
+    height: inherit;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffe6e6;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+h1 {
+    color: #ef410c;
+}    
+
+.input-container {
+    display: flex;
+  }
+  
+  .input-box {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    margin: 0 5px;
+    text-align: center;
+  }
