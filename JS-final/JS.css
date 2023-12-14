@@ -41,9 +41,16 @@ h1 {
 .set-button {
     background-color: yellow;
     color: gold;
+
   }
   
 .restart-button {
     background-color: limegreen;
     color: paleturquoise;
+
+}
+
+.submit-button {
+    background-color: red;
+    color: brown;
 }

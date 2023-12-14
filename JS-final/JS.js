@@ -76,6 +76,24 @@ function restart() {
   startCounting(currentIndex);
 }
 
+function submit() {
+    const inputContainers = document.querySelectorAll('.input-box');
+
+    // Clear all input boxes
+    inputContainers.forEach(input => {
+      input.value = '';
+    });
+  
+    // Reset the current index to the first input box
+    currentIndex = 0;
+  
+    // Stop counting
+    stopCounting();
+  
+    // Start counting in current box
+    startCounting(currentIndex);
+}
+
 // Create input boxes based on the length of the phone number
 const inputContainer = document.getElementById('input-container');
 for (let i = 0; i < 10; i++) {
