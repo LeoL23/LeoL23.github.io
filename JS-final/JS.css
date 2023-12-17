@@ -11,9 +11,10 @@ body {
     overflow: hidden;
     height: inherit;
     font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 40px;
     background-color: #ffe6e6;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 80px;
     border-radius: 40px;
 }
 
@@ -25,6 +26,8 @@ body {
 
 h1 {
     color: #ef410c;
+    position: relative;
+    top: 125px;
 }    
 
 .input-container {
@@ -32,41 +35,52 @@ h1 {
   }
   
 .input-box {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     font-size: 24px;
     margin: 0 7px;
     text-align: center;
     border-radius: 40px;
     border: none;
+    position: relative;
+    top: 150px;
   }
 
 .set-button {
     background-color: yellow;
-    color: gold;
-    width: 60px;
-    height: 50px;
-    font-size: 14px;
+    color: orange;
+    width: 120px;
+    height: 110px;
+    font-size: 24px;
     border-radius: 20px;
     border: none;
+    position: relative;
+    top: 200px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
   }
   
 .restart-button {
     background-color: limegreen;
     color: paleturquoise;
-    width: 60px;
-    height: 50px;
-    font-size: 14px;
+    width: 120px;
+    height: 110px;
+    font-size: 24px;
     border-radius: 20px;
     border: none;
+    position: relative;
+    top: 200px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
 .submit-button {
     background-color: red;
     color: brown;
-    width: 60px;
-    height: 50px;
-    font-size: 14px;
+    width: 120px;
+    height: 110px;
+    font-size: 24px;
     border-radius: 20px;
     border: none;
+    position: relative;
+    top: 200px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
 }
