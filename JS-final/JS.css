@@ -14,6 +14,7 @@ body {
     background-color: #ffe6e6;
     text-align: center;
     padding-top: 50px;
+    border-radius: 40px;
 }
 
 #main-container {
@@ -36,21 +37,36 @@ h1 {
     font-size: 24px;
     margin: 0 7px;
     text-align: center;
+    border-radius: 40px;
+    border: none;
   }
 
 .set-button {
     background-color: yellow;
     color: gold;
-
+    width: 60px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: none;
   }
   
 .restart-button {
     background-color: limegreen;
     color: paleturquoise;
-
+    width: 60px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: none;
 }
 
 .submit-button {
     background-color: red;
     color: brown;
+    width: 60px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: none;
 }

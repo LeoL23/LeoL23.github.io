@@ -84,7 +84,7 @@ function submit() {
       input.value = '';
     });
   
-    // Reset the current index to the first input box
+    // Reset the current index to first input box
     currentIndex = 0;
   
     // Stop counting
@@ -104,5 +104,5 @@ for (let i = 0; i < 10; i++) {
   inputContainer.appendChild(inputBox);
 }
 
-// Start counting for the first box initially
+// Start counting for the first box
 startCounting(currentIndex);
