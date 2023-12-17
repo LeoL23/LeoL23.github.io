@@ -1,6 +1,6 @@
 console.log("Making sure this works");
 
-let currentIndex = 0; // Current index of the input boxes
+let currentIndex = 0;
 let countingInterval;
 
 function startCounting(index) {
@@ -94,7 +94,7 @@ function submit() {
     startCounting(currentIndex);
 }
 
-// Create input boxes based on the length of the phone number
+// Create amount of input boxes as there are 10 digits in a phone number
 const inputContainer = document.getElementById('input-container');
 for (let i = 0; i < 10; i++) {
   const inputBox = document.createElement('input');
